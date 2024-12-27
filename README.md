@@ -19,9 +19,11 @@ The portfolio is responsive and works seamlessly on both desktop and mobile devi
 
 - **Navigation**: Easy-to-use navigation bar with smooth scrolling.
 - **Responsive Design**: Optimized for various screen sizes using media queries.
-- **Projects Section**: Displays my projects with descriptions and links.
-- **Contact Form**: Allows users to send me messages directly via Formspree integration.
 - **Scroll-to-Top Button**: Quickly navigate back to the top of the page.
+- **Home**: The landing page with a brief introduction to who I am.
+- **About Me**: A section dedicated to my background, skills, and experiences.
+- **Projects**: Displays my projects with descriptions and links.
+- **Contact**: A form to get in touch with me directly via email.
 
 ---
 
