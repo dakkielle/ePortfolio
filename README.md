@@ -1,5 +1,3 @@
-# ePortfolio
-
 # My ePortfolio
 
 Welcome to my ePortfolio! This project showcases my skills, projects, and contact information in a visually appealing and user-friendly format. It's a reflection of my journey as a developer and provides an easy way to connect with me.
