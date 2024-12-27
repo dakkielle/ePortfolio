@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body id="top">
+    <nav id="desktop-nav">
+      <div class="logo">SCM</div>
+      <div id="scrollArrow" class="arrow">
+        <a href="#top">
+            <img src="./assets/arrow.png" alt="Scroll to Top">
+        </a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">shnchm</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/main-photo..jpg" alt="Shan Chai profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">print(); Hello, I'm</p>
+        <h1 class="title">Shan Chai</h1>
+        <p class="section__text__p2">I debug servers and live life on luck.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='./#contact'"
+          >
+            Let's Talk!
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/shan-chai-m'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/shnchm'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <img src="./assets/about-photo.jpg" alt="Profile Picture" class="about-pic" />
+            <div class="about-details-container">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                    <h2>Skills</h2>
+                    <div class="skills-list">
+                        <ul>
+                            <li><img src="./assets/checkmark.png" alt="Checkmark icon" class="checkmark" /> C++</li>
+                            <li><img src="./assets/checkmark.png" alt="Checkmark icon" class="checkmark" /> Python</li>
+                            <li><img src="./assets/checkmark.png" alt="Checkmark icon" class="checkmark" /> HTML</li>
+                            <li><img src="./assets/checkmark.png" alt="Checkmark icon" class="checkmark" /> CSS</li>
+                        </ul>
+                        <ul>
+                            <li><img src="./assets/checkmark.png" alt="Checkmark icon" class="checkmark" /> SQLite</li>
+                            <li><img src="./assets/checkmark.png" alt="Checkmark icon" class="checkmark" /> React</li>
+                            <li><img src="./assets/checkmark.png" alt="Checkmark icon" class="checkmark" /> Firebase</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <img 
+                    src="./assets/education.png" 
+                    alt="Education icon" 
+                    class="icon" 
+                    />
+                    <h2>Education</h2>
+                    <p>3rd Year<br />BS Computer Science</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-container">
+            <p>I am</p>
+            <h1>Shan Chai Manlunas</h1>
+            <p>
+              a backend enthusiast. I thrive on tackling backend complexities, integrating </p>
+            <p>APIs, and building reliable systems. When I’m not debugging 
+              servers, I’m 
+            <p>probably exploring new things or binge-watching shows. 
+            <p>Let’s connect and create something awesome!
+            </p>
+        </div>
+    
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+          
+          <div class="project-card">
+            <h5 class="card-title">Cracking-Up Credentials</h5>
+            <p class="card-text">
+                A local, offline password manager for securely storing and managing user credentials.
+            </p>
+            <div class="image-container">
+              <img src="./assets/cracking-up.png" class="project-img" alt="Project 1">
+            </div>
+            <a href="https://github.com/shnchm" target="_blank" class="btn">GitHub</a>
+          </div>
+      
+          <div class="project-card">
+            <h5 class="card-title">Buddle</h5>
+            <p class="card-text">
+                A booking system mobile application that connects students with qualified tutors, offering a seamless and personalized learning experience.
+            </p>
+            <div class="image-container">
+              <img src="./assets/buddle.png" class="project-img" alt="Project 2">
+            </div>
+            <a href="https://github.com/jezberiana/scitcbuddle" target="_blank" class="btn">GitHub</a>
+          </div>
+      
+          <div class="project-card">
+            <h5 class="card-title">Regex Parser</h5>
+            <p class="card-text">
+                A tool that interpets regular expression and builds an NFA for fast and accurate string matching.
+            </p>
+            <div class="image-container">
+              <img src="./assets/regex-parser.png" class="project-img" alt="Project 3">
+            </div>
+            <a href="https://github.com/dormitory-management" target="_blank" class="btn">GitHub</a>
+          </div>
+      
+        </div>
+      </section>
+      <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <form action="https://formspree.io/f/mqaaqkav" method="POST" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send</button>
+    </form>
+</section>
+<footer>
+    <p>Copyright &#169; 2024 Shan Chai M. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+      
