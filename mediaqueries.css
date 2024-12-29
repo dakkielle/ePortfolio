@@ -8,8 +8,11 @@
   }
   #contact,
   #projects {
-    height: fit-content;
+    height: fit content;
   }
+
+  .project-container {
+    max-height: 500px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -23,6 +26,7 @@
   .experience-details-container {
     margin-top: 2rem;
   }
+  
   #profile,
   .section-container {
     display: block;
