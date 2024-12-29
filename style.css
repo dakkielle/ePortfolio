@@ -491,7 +491,7 @@ article .icon {
 }
 
 .project-container {
-  height: 500px; /* Ensure all project cards have the same height */
+  min-height: 500px; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
