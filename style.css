@@ -266,24 +266,11 @@ section {
   color: #FF4F81;
   border-right: 2px solid #FF4F81; /* Cursor effect */
   white-space: nowrap;
-  overflow: hidden;
-  width: 0; /* Start from 0 width */
-  animation: typing 3s steps(30, end) 1s infinite, blink 0.5s step-end infinite;
+  overflow: hidden; /* Ensures text outside is hidden */
+  width: fit-content;
+  animation: blink 0.5s step-end infinite alternate; /* Blinking cursor */
   display: inline-block;
-  text-align: left;
-}
-
-/* Typing Effect */
-@keyframes typing {
-  0% { width: 0; }
-  50% { width: 100%; }
-  100% { width: 0; }
-}
-
-/* Blinking Cursor */
-@keyframes blink {
-  0% { border-color: transparent; }
-  100% { border-color: #FF4F81; }
+  text-align: left; /* Align the typewriter effect to the left */
 }
 
 #socials-container {
